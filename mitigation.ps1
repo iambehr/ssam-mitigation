@@ -5,7 +5,7 @@
 # Do not run on Windows Server if your backups use VSS
 
 #Log Entry
- Add-Content -Path C:\samtest.log -Value (Get-Date)
+Add-Content -Path C:\samtest.log -Value (Get-Date)
 
 #Removes permissions and deletes shadow copies
 $checkPermissions = icacls c:\Windows\System32\config\sam
