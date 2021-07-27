@@ -60,7 +60,7 @@ if ($vulnerable -eq $true) {
     }
 }
 else {
-    $fixed = 'Not applicable'
+    $fixed = 'N/A'
 }
 
  
