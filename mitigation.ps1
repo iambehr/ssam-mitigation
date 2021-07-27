@@ -71,5 +71,5 @@ if ($vulnerable -eq $true -and $shadowSucces -eq $true -and $permissionsSucces -
  
 
 #Outputs final script success to log file
-Add-Content -Path C:\kworking\samtest.log -Value "vulnerable: $vulnerable"
-Add-Content -Path C:\kworking\samtest.log -Value "Fixed: $fixed"
+Add-Content -Path C:\samtest.log -Value "vulnerable: $vulnerable"
+Add-Content -Path C:\samtest.log -Value "Fixed: $fixed"
