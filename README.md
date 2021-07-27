@@ -8,6 +8,6 @@ This removes the BUILTIN\User ACL ENTIRELY from the SAM file.
 USE THIS AT YOUR OWN RISK
 
 Notes:
-Wildcard matching is using -like "'*BUILTIN\Users:*'" so it should match any ACL
+Wildcard matching is using -like "'*BUILTIN\Users:*'" so it should match any ACL for BUILTIN\Users
 
 I noticed "Get-WmiObject Win32_ShadowStorage -Property UsedSpace | Select-Object -ExpandProperty UsedSpace" was returning null instead of zero - if you have trouble with the script try changing the match for checking if shadow copy has been removed to "0" instead of "$null"
