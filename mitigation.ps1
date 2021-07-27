@@ -1,8 +1,8 @@
 # Removes BUILTIN\User ACL from C:\Windows\System32\config\SAM
 # v.09
 
-# Script required ot run as system
-# Do not run on Windows Server in case you use VSS for backups
+# Script requires run as system
+# Do not run on Windows Server if your backups use VSS
 
 #Removes permissions and deletes shadow copies
 $checkPermissions = icacls c:\Windows\System32\config\sam
