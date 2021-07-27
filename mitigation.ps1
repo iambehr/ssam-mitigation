@@ -26,7 +26,7 @@ if ($vulnerable -eq $true) {
     }
     else {
         $permissionsSucces = $true
-        Add-Content -Path C:\kworking\samtest.log -Value "Successfully reset permission inheritance on affected files."
+        Add-Content -Path C:\samtest.log -Value "Successfully reset permission inheritance on affected files."
     }
 }
 
