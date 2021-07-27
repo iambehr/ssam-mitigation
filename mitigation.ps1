@@ -26,7 +26,7 @@ if ($vulnerable -eq $true) {
     }
     else {
         $permissionsSucces = $true
-        Add-Content -Path C:\samtest.log -Value "Successfully reset permission inheritance on affected files."
+        Add-Content -Path C:\samtest.log -Value "Successfully removed BUILTIN\Users ACL from SAM file."
     }
 }
 
