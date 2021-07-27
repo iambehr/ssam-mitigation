@@ -20,7 +20,7 @@ else {
 #Checks if permissions have been removed
 if ($vulnerable -eq $true) {
     $checkPermissions = icacls C:\windows\system32\config\sam
-    if ($checkPermissions -like '*BUILTIN\Users:*(RX*)*') {
+    if ($checkPermissions -like '*BUILTIN\Users:*') {
         $permissionsSucces = $false
         Add-Content -Path C:\samtest.log -Value "ACL change failed. Check permissions running script, e.g. run as SYSTEM."
     }
